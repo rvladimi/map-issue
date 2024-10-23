@@ -1,0 +1,64 @@
+.ymaps3x0--marker {
+  height: 35px;
+  width: 35px;
+}
+
+.ymaps3x0--marker img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.circle {
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+
+  color: var(--interact-action);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
+}
+
+.circle-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+  height: 90%;
+
+  border-radius: 50%;
+  background-color: red;
+
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.circle-content:hover {
+  background-color: blue;
+}
+
+.circle-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fff;
+}
+
+.image {
+  border-radius: 16px;
+  transition: all 0.3s ease-out;
+  border: 1px solid #ffffff;
+}
+
+.image:hover {
+  scale: 1.1;
+  border: 1px solid transparent;
+}
